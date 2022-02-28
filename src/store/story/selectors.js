@@ -1,0 +1,1 @@
+export const selectStories = (reduxState) => reduxState.StorySliceReducer.stories

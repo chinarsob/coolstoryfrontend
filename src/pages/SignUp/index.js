@@ -12,8 +12,11 @@ export default function SignUp() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [title, setTitle] = useState("");
   const dispatch = useDispatch();
   const token = useSelector(selectToken);
+  const backGroundColor="#ffffff";
+  const Color="#000000";
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -30,6 +33,7 @@ export default function SignUp() {
     setEmail("");
     setPassword("");
     setName("");
+    setTitle("");
   }
 
   return (
